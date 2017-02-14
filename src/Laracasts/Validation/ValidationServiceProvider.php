@@ -26,7 +26,11 @@ class ValidationServiceProvider extends ServiceProvider {
 
 	public function boot()
 	{
-		$this->package('laracasts/validation');
+		//
+	}
+
+	public function provides() {
+		return ['Laracasts\Validation\LaravelValidator'];
 	}
 
 }
